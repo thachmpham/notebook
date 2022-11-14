@@ -1,0 +1,52 @@
+caller  ->  proxy:      invite
+
+proxy   ->  callee1:    invite 
+callee1 ->  proxy:      486 no thanks
+proxy   ->  callee1:    ack
+
+proxy   ->  callee2:    invite 
+callee2 ->  proxy:      486 no thanks
+proxy   ->  callee1:    ack
+
+proxy   ->  callee3:    invite 
+callee3 ->  proxy:      200 ok
+proxy   ->  caller:     200 ok
+caller  ->  callee3:    ack
+
+
+----------  ----------  ----------  ----------  ----------
+BRANCH PARAMETER
+    Branch IDs help proxies to match responses to forked requests.
+
+caller  ->  proxy:  invite
+Via: caller;    branch=branch_gen_by_caller
+
+// send request to callee1
+proxy   ->  callee1:    invite 
+Via: proxy;     branch=branch_1_gen_by_proxy
+Via: caller;    branch=branch_gen_by_caller
+
+callee1 ->  proxy:  486 no thanks
+proxy   ->  callee1:    ack
+
+
+// send request to callee2
+proxy   ->  callee2:    invite 
+Via: proxy;     branch=branch_2_gen_by_proxy
+Via: caller;    branch=branch_gen_by_caller
+
+callee2 ->  proxy:  486 no thanks
+proxy   ->  callee1:    ack
+
+
+// send request to callee3
+proxy   ->  callee3:    invite 
+Via: proxy;     branch=branch_3_gen_by_proxy
+Via: caller;    branch=branch_gen_by_caller
+
+callee3 ->  proxy:  200 ok
+proxy   ->  caller: 200 ok
+
+caller   ->  callee3:    ack
+
+

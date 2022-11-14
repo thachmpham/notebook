@@ -1,0 +1,67 @@
+VIA HEADER
+
+Pupose
+    Trace moving path
+
+    When a user agent client (UAC) creates a SIP request, 
+    it must insert a Via header into that request.
+    The Via header identifies the protocol name (SIP), protocol version (2.0), 
+    transport type (e.g. UDP or TCP), IP address of the UAC, 
+    and the protocol port (typically 5060) used for the request.  
+    This information allows the recipient of the request (a user agent server) 
+    to return SIP responses to the correct device
+
+Behavior
+    When the UAC creates a request, it MUST insert a Via into that
+    request.
+        RFC 3261 - 8.1.1.7 Via
+
+    The proxy MUST insert a Via header field value 
+    into the copy before the existing Via header field values
+        RFC 3261 - 16.6 Request Forwarding
+    
+    The proxy removes the topmost Via header field value from the response.
+        RFC 3261 - 16.7 Response Processing
+
+
+BRANCH PARAMETER
+
+Purpose
+    Branch IDs help proxies to match responses to forked requests. 
+    Without Branch IDs, a proxy server would not be able to understand the forked response. 
+    
+    The Via header field value MUST contain a branch parameter.
+    This parameter is used to identify the transaction created by that request.
+        RFC 3261 - 8.1.1.7 Via
+
+
+----------  ----------  ----------  ----------  ----------  
+
+
+caller -> proxy: invite
++   via: caller; branch:b1
+
+proxy -> caller: 100 trying
+    via: caller; branch:b1
+
+proxy -> callee: invite
++   via: proxy; branch:b2 
+    via: caller; branch:b1
+
+callee -> proxy: 100 trying
+    via: proxy; branch:b2 
+    via: caller; branch:b1
+
+callee -> proxy: 200 ok
+    via: proxy; branch:b2 
+    via: caller; branch:b1
+
+proxy -> caller: 200 ok
+    via: caller; branch:b1
+-   proxy remove its via from invite header
+
+
+
+
+
+

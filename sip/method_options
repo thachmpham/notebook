@@ -1,0 +1,8 @@
+REQUEST OPTIONS
+
+Purpose
+    The SIP method OPTIONS allows a UA to query another UA or a proxy
+    server as to its capabilities. This allows a client to discover
+    information about the supported methods, content types, extensions,
+    codecs, etc. without "ringing" the other party
+
