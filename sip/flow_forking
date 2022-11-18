@@ -1,14 +1,26 @@
-caller  ->  proxy:      invite
+calller:    alice
+            alice@atlanta.com
+            192.168.3.1:5060
 
-proxy   ->  callee1:    invite 
+callee:     bob
+            bob@biloxi.com
+            192.168.3.50:5001
+            192.168.3.50:5002
+            192.168.3.50:5003
+
+
+--------------------------------------------------
+caller  ->  proxy:      INVITE sip:bob@biloxi.com SIP/2.0
+
+proxy   ->  callee1:    INVITE sip:192.168.3.50:5001 SIP/2.0
 callee1 ->  proxy:      486 no thanks
 proxy   ->  callee1:    ack
 
-proxy   ->  callee2:    invite 
+proxy   ->  callee2:    INVITE sip:192.168.3.50:5002 SIP/2.0 
 callee2 ->  proxy:      486 no thanks
 proxy   ->  callee1:    ack
 
-proxy   ->  callee3:    invite 
+proxy   ->  callee3:    INVITE sip:192.168.3.50:5003 SIP/2.0
 callee3 ->  proxy:      200 ok
 proxy   ->  caller:     200 ok
 caller  ->  callee3:    ack
