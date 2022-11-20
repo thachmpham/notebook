@@ -1,0 +1,83 @@
+TAG
+-   Tags are used by the UAC to distinguish multiple final responses from different UAS. 
+    A UAS cannot resolve whether the request has been forked or not
+
+-   Proxies also can add tags if it generates a final response,
+    they never insert tags into requests or responses they forward.
+
+
+rfc3261 19.3
+-   Identify a dialog by combination of the Call-ID, From Tag, To Tag
+-   When a UA sends a request outside of a dialog, it contains a From Tag
+    The dialog is completed from the response(s) which contributes To Tag
+    
+
+refine:
+-   Tag used by UAS to check if request is forked or not
+-   Tag used by UAC to distinguish multiple final responses from different UAS
+-   Branch used by PROXY to match reponses and forked requests
+
+
+--------------------------------------------------
+calller:    alice
+            alice@atlanta.com
+            192.168.3.1:5060
+
+callee:     bob
+            bob@biloxi.com
+            192.168.3.50:5001
+            192.168.3.50:5002
+            192.168.3.50:5003
+--------------------------------------------------
+caller  ->  proxy:      INVITE sip:bob@biloxi.com SIP/2.0
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;
+                        
+proxy   ->  callee1:    INVITE sip:192.168.3.50:5001 SIP/2.0
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;
+
+proxy   ->  caller:     100 Trying
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;
+
+callee1 ->  proxy:      180 Ringing
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;          tag=callee1_tag
+                
+proxy ->  caller:       180 Ringing
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;          tag=callee1_tag                
+        
+callee1 ->  proxy:      486 no thanks
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;          tag=callee1_tag 
+
+proxy   ->  callee1:    ack
+
+...
+
+proxy   ->  callee3:    INVITE sip:192.168.3.50:5003 SIP/2.0
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;
+                        
+callee3 ->  proxy:      180 Ringing
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;          tag=callee3_tag
+                        
+proxy ->  caller:       180 Ringing
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;          tag=callee3_tag                        
+            
+callee3 ->  proxy:      200 ok
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;          tag=callee3_tag
+
+proxy   ->  caller:     200 ok
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;          tag=callee3_tag
+
+caller  ->  callee3:    ack
+                        From:alice@atlanta.com;     tag=caller_tag
+                        To:bob@biloxi.com;          tag=callee3_tag
+
