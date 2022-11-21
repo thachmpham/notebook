@@ -3,11 +3,13 @@ VoIP: voice over IP, call over internet
 user agent client (uac): entity that creates a new request
 user agent server (uas): entity that creates a new response
 
+downstream: client -> server
+upstream:   server -> client
 
 RFC 3261
+16 Proxy Behavior
 16.6 Request Forwarding
 16.7 Response Processing
-
 
 
 https://www.rfc-editor.org/rfc/rfc2543

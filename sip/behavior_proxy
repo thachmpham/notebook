@@ -1,0 +1,81 @@
+                    PROXY
+--------------------------------------------------
+
+16 Proxy Behavior
+-   SIP proxies are elements that route SIP requests to user agent
+    servers and SIP responses to user agent clients.
+   
+-   A proxy can operate in either a stateful or stateless mode for each new request.
+    
+    When stateless, a proxy acts as a simple forwarding element.
+    A stateless proxy discards information about a message once the message
+    has been forwarded.
+    
+    A stateful proxy remembers information about each incoming request and any
+    requests it sends as a result of processing the incoming request
+    A stateful proxy MAY choose to "fork" a request, routing it to multiple destinations.
+    Any request that is forwarded to more than one location MUST be handled statefully
+
+--------------------------------------------------
+
+16.2 Stateful Proxy
+-   For all new requests, a Proxy must:
+    1. Validate the request (Section 16.3)
+    2. Preprocess routing information (Section 16.4)
+    3. Determine target(s) for the request (Section 16.5)
+    4. Forward the request to each target (Section 16.6)
+    5. Process all responses (Section 16.7)
+        
+16.5 Determining Request Targets
+-   The proxy calculates the target(s) of the request.  The set of
+    targets will either be predetermined by the contents of the request
+    or will be obtained from an abstract location service.  Each target
+    in the set is represented as a URI.
+
+16.6 Request Forwarding
+-   As soon as the target set is non-empty, a proxy MAY begin forwarding
+    the request.  A stateful proxy MAY process the set in any order.
+    
+    A common ordering mechanism is to use the qvalue parameter of targets
+    obtained from Contact header fields (see Section 20.10).  Targets are
+    processed from highest qvalue to lowest.  Targets with equal qvalues
+    may be processed in parallel.
+    
+-   For each target, the proxy forwards the request following these steps:
+    1.  Make a copy of the received request
+    2.  Update the Request-URI
+    3.  Update the Max-Forwards header field
+    4.  Optionally add a Record-route header field value
+    5.  Optionally add additional header fields
+    6.  Postprocess routing information
+    7.  Determine the next-hop address, port, and transport
+    8.  Add a Via header field value
+    9.  Add a Content-Length header field if necessary
+    10. Forward the new request
+            Create a new client transaction
+            instructs the transaction to send the request using
+            the address, port and transport determined in step 7.
+    11. Set timer C
+
+
+16.7 Response Processing
+-   When a response is received by an element, it first tries to locate a
+    client transaction (Section 17.1.3) matching the response.
+    
+-   The following processing MUST take place:
+    1.  Find the appropriate response context
+            The proxy locates the "response context" it created before
+            forwarding the original request using the key described in
+            Section 16.6.  The remaining processing steps take place in
+            this context.
+    2.  Update timer C for provisional responses
+    3.  Remove the topmost Via
+    4.  Add the response to the response context
+    5.  Check to see if this response should be forwarded immediately
+    6.  When necessary, choose the best final response from the response context
+            A stateful proxy MUST send a final response
+            to a response context's server transaction
+    7.  Aggregate authorization header field values if necessary
+    8.  Optionally rewrite Record-Route header field values
+    9.  Forward the response
+    10. Generate any necessary CANCEL requests
