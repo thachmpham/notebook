@@ -10,6 +10,8 @@ callee:     bob
 
 
 --------------------------------------------------
+            Serial Forking
+
 caller  ->  proxy:      INVITE sip:bob@biloxi.com SIP/2.0
 
 proxy   ->  callee1:    INVITE sip:192.168.3.50:5001 SIP/2.0
@@ -25,10 +27,24 @@ callee3 ->  proxy:      200 ok
 proxy   ->  caller:     200 ok
 caller  ->  callee3:    ack
 
+--------------------------------------------------
+            Parallel Forking
+            
+caller  ->  proxy:      INVITE sip:bob@biloxi.com SIP/2.0
+proxy   ->  callee1:    INVITE sip:192.168.3.50:5001 SIP/2.0
+proxy   ->  callee2:    INVITE sip:192.168.3.50:5002 SIP/2.0 
+proxy   ->  callee3:    INVITE sip:192.168.3.50:5003 SIP/2.0
 
-----------  ----------  ----------  ----------  ----------
-BRANCH PARAMETER
-    Branch IDs help proxies to match responses to forked requests.
+callee2 ->  proxy:      200 OK
+proxy   ->  caller:     200 OK
+
+// after receiving 200 OK from callee2, proxy send CANCEL to callee1, callee3
+proxy   ->  callee1:    CANCEL sip:192.168.3.50:5003 SIP/2.0
+proxy   ->  callee3:    CANCEL sip:192.168.3.50:5001 SIP/2.0
+
+--------------------------------------------------
+            BRANCH PARAMETER
+Branch IDs help proxies to match responses to forked requests.
 
 caller  ->  proxy:  invite
 Via: caller;    branch=branch_gen_by_caller
