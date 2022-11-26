@@ -1,0 +1,24 @@
+The CANCEL request
+-   cancel a previous request sent by a client.  
+-   asks the UAS to cease processing the request 
+    and to generate an error response to that request. 
+-   CANCEL has no effect on a request to which a UAS has
+    already given a final response.  
+
+Usage:
+a UAS that receives a CANCEL request for an INVITE, but has not yet sent a
+final response, would "stop ringing", and then respond to the INVITE
+with a specific error response (a 487).
+
+
+--------------------------------------------------
+
+caller  ->  callee: INVITE
+
+caller  ->  callee: CANCEL
+caller  <-  callee: 200 OK
+caller  <-  callee: 487 Request Terminated
+caller  ->  callee: ACK
+
+
+

@@ -12,8 +12,8 @@ sudo tshark -i vboxnet14 -w bt.pcap
 sudo tshark -r bt.pcap -n -Y 'sip' -O sip
 
 sudo tshark -r bt.pcap -n -Y 'sip' -T fields -e ip.addr -e udp.port -e sip.Request-Line -e sip.Status-Line
-# -T json
-# display as fields
+# -T fields
+# display as fields format
 
 # -e fields
 # print selected fields
