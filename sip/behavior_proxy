@@ -56,7 +56,8 @@
             instructs the transaction to send the request using
             the address, port and transport determined in step 7.
     11. Set timer C
-
+            Handle case: INVITE never get final response
+            Larger than 3 minutes
 
 16.7 Response Processing
 -   When a response is received by an element, it first tries to locate a
@@ -79,3 +80,44 @@
     8.  Optionally rewrite Record-Route header field values
     9.  Forward the response
     10. Generate any necessary CANCEL requests
+    
+--------------------------------------------------
+            Timer C
+
+16.6.11 Request Forwarding
+-   In order to handle the case where an INVITE request never
+    generates a final response, the TU uses a timer which is called
+    timer C.  Timer C MUST be set for each client transaction when
+    an INVITE request is proxied.  The timer MUST be larger than 3
+    minutes
+    
+16.7.2 Response Processing
+-   For an INVITE transaction, if the response is a provisional
+    response with status codes 101 to 199 inclusive
+    the proxy MUST reset timer C for that client transaction.
+    The timer MAY be reset to a different value, 
+    but this value MUST be greater than 3 minutes.
+
+16.8 Reponse Processing
+-   If timer C should fire, the proxy MUST either reset the timer with
+    any value it chooses, or terminate the client transaction.  If the
+    client transaction has received a provisional response, the proxy
+    MUST generate a CANCEL request matching that transaction.  If the
+    client transaction has not received a provisional response, the proxy
+    MUST behave as if the transaction received a 408 (Request Timeout)
+    response.
+
+
+A Table of Timer Values
+https://www.rfc-editor.org/rfc/rfc3261#page-265
+
+
+
+
+
+
+
+
+
+
+    
