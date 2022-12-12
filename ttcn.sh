@@ -29,7 +29,9 @@ cd ~/ttcn/demo/
 make
 ttcn3_start MyExample
 
-
+# check
+# ttcn/doc/User Guide
+# https://gitlab.eclipse.org/eclipse/titan/titan.core/tree/master/usrguide/referenceguide
 --------------------------------------------------
             Links
 

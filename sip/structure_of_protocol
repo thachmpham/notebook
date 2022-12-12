@@ -1,0 +1,17 @@
+SIP is structured as a layered protocol,
+List of layers:
+-   Syntax and Encoding Layer
+-   Transport Layer
+    -   Defines how a client sends requests and receives responses 
+        and how a server receives requests and sends responses
+-   Transaction Layer
+    -   A transaction is a request sent by a client transaction to a server transaction, 
+        along with all responses to that request.
+    -   The transaction layer handles   application-layer retransmissions, 
+        matching of responses to requests, and application-layer timeouts.
+-   Transaction User Layer (User of Transaction)
+    -   SIP entities are transaction user, that are:
+            - User agent clients: construction of a request
+            - User agent servers: processing of a request and generating a response
+            - Stateful proxies: handles a REGISTER
+            - Registrars

@@ -22,6 +22,9 @@ sudo tshark -r bt.pcap -n -Y 'sip' -T fields -e ip.addr -e udp.port -e sip.Reque
 
 sudo tshark -r bt.pcap -n -Y 'sip' -T fields -e ip.src -e udp.srcport -e ip.dst -e udp.dstport -e sip.Request-Line -e sip.Status-Line
 
+sudo tshark -i vboxnet14 -n -Y 'sip' -T fields -e ip.src -e udp.srcport -e ip.dst -e udp.dstport -e sip.Request-Line -e sip.Status-Line
+sudo tshark -i vboxnet14 -n -Y 'sip' -T fields -e frame.time -e ip.src -e udp.srcport -e ip.dst -e udp.dstport -e sip.Request-Line -e sip.Status-Line
+
 
 # print sip text to both of terminal and file
 sudo tshark -i any -n -Y 'sip' -O sip 2>&1 | tee sip.json
@@ -31,3 +34,8 @@ sudo tshark -i any -f 'port 5060' -n -Y 'sip' -O sip
 
 # to find the abbreviations of the protocols
 tshark -G protocols
+
+
+sudo tshark -i any -f 'ether proto \arp' -O arp
+
+
