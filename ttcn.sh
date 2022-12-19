@@ -32,6 +32,27 @@ ttcn3_start MyExample
 # check
 # ttcn/doc/User Guide
 # https://gitlab.eclipse.org/eclipse/titan/titan.core/tree/master/usrguide/referenceguide
+
+--------------------------------------------------
+            module
+- top obligatory container of ttcn code
+- contain declaration part and control part
+- able to import other modules
+
+---------------
+            data types
+- basic:        integer, boolean, float, charstring
+- structure:    enumerated, record, set, union
+- list:         array, set of, record of
+-               ASN1
+-               verdicttype
+
+--------------------------------------------------
+            workflow
+- Generating and editing a Makefile
+- Building the executable
+- Executing test suites
+- Analyzing the execution log files
 --------------------------------------------------
             Links
 

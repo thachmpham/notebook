@@ -1,0 +1,26 @@
+Network 1 - Router - Network 2
+
+Network 1:
+A:      192.168.1.2
+B:      192.168.1.3
+Router: 192.168.1.1
+
+Network 2:
+A:      192.168.1.2
+B:      192.168.1.3
+Router: 192.168.1.1
+
+A ----> D: How ?
+
+---------------
+In A:
+    - default gateway: 192.168.1.1
+    $ route
+
+A       ->  B:      ARP request (who is 192.168.1.1 - default gateway)
+A       ->  Router: ARP request (who is 192.168.1.1)
+B discards
+Router  ->  A:      ARP reply   (I'm 192.168.1.1, MAC=08:00:27:f6:37:c6)
+
+
+
