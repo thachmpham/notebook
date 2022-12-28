@@ -1,0 +1,130 @@
+--------------- Contact
+    skype: thuc.nguyendinh    
+    skype: https://join.skype.com/tKXa6YeM8y2j
+
+
+--------------- GPA
+- weekly exercises
+    - 40%
+    - 1 paper
+    - submit in class
+
+- monthly exercises - coding projects
+    - 30%
+    - 2 members
+    - there're 3 projects
+
+- final exam
+    - 30%
+    - Question and answer with teacher
+    
+    
+--------------- Search Problem
+- khong gian huu han
+    - vet can
+        - liet ke
+        - huong dich
+    - do thi
+        - quay lui
+            - bfs
+            - dfs
+        # ref: Ly Thuyet Do Thi - Duong Anh Duc   
+             
+- khong gian vo han
+    - bai toan toi uu
+        # find min/max of f(x), x lien tuc
+        - toi uu loi
+            # phuong trinh dao ham f(x) bang 0
+        - toi uu cuc bo
+            - phuong phap gradiant
+        - heuristic
+            # khi dung heuristic trong thuat toan
+            # nen giai thich heuristic
+            #   chung minh heuristic hieu qua
+            #   chung minh heuristic lam thuat toan dung lai
+            #   cang ve vo cuc, heuristic cang ve 0
+        - ky thuat mo phong / gia lap
+        - mo hinh xac suat
+            - tim tinh phan bo cua du lieu
+            - thong ke
+            - suy dien
+                - trung binh
+                - phuong sai
+            - xich maskov
+                - thong ke qua khu
+                - du bao tuong lai
+            # ref: Thong Ke May Tinh - Duong Anh Duc
+            > lay mau data phai phan tich trung binh, phuong sai cua mau
+                
+                
+--------------- Exercises
+> Huong dich:
+>   Gia su da co output trang thai thu n-1
+>   Tim output trang thai thu n
+
+> sample code:
+def enumerate(i): # i 
+    if i == n-1:
+        p(S)
+    else:
+        for j in D:
+            S[i] = j
+            enumerate(i+1)
+
+
+1. Liet ke cac chuoi nhi phan co do dai n.
+Thuat toan:
+Gia su, ta da co chuoi nhi phan s co do dai i.
+Them 0 hoac 1 vao cuoi s, ta co chuoi nhi phan do dai i+1.
+
+Code: ex01.py
+                    .....
+                    
+                    
+2. Cho tap A gom n phan tu, ex: A = {1,7,3,10}
+Tim tat ca tap con B sao cho, sum(B) = t, t cho truoc.
+Thuat toan:
+Bai toan co hai:
+    - Tim cac tap con B cua tap A
+    - Kiem tra sum(B) == t
+
+De co mot tap con B cua tap A.
+Ta tim mot chuoi nhi phan s co do dai n.
+Neu s[i] == 1, thi A[i] duoc chon vao tap con B.
+Neu s[i] == 0, thi A[i] khong duoc chon.
+De tim chuoi nhi phan s, ta su dung lai cach lam cua bai 1.
+
+De kiem tra sum(B) == t,
+ta tinh tong cua cac phan tu A[i] vua duoc chon
+roi so sanh voi t.
+
+Code: ex02.py
+                    .....
+                    
+                    
+3. Cho tap A gom cac loai mat hang nhu, ex: A {coc, xoai, oi, cam}
+Chon 2 mat hang tu tap A, liet ke tat ca cach chon
+Thuat toan:
+Gia su, ta da chon duoc k mat hang va cho vao gio B.
+De co k+1 mat hang,
+ta lay mot mat hang chua duoc chon va cho no vao gio B.
+
+Code: ex03.py
+
+                    .....
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+                
