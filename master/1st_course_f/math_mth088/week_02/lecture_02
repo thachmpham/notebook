@@ -1,0 +1,19 @@
+backtrack
+divide and conquer
+
+big O
+
+graph
+    dfs
+    bfs
+
+
+--------------- lab 1
+create a tool support user to:
+    - create graph
+    - extract subgraph
+        - extract by what, student design
+        
+ref: big graph library - standford university
+
+

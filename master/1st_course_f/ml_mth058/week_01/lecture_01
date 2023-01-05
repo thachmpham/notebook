@@ -1,0 +1,98 @@
+--------------- GPA
+multichoice quiz exam (50%)
+    - week 5 or 6 (25%)
+    - week 10 (25%)
+    
+project (50%)
+    - read paper
+    - understand, report
+    - 4-5 members
+    # week 3, tutorial how to read paper
+    # ask about concepts, definitions, fomular
+    # why it solve the problem
+    # 25  questions - 50 min
+    #       5 questions / week
+    
+
+bonus (10 %)
+    - code for the paper
+    - or illustrative example for the paper
+    
+    
+--------------- week 1
+
+----- supervise learning
+- tap du lieu:
+    - x: vector n chieu
+    - y: nhan, co m du lieu mau
+        
+        
+----- classification
+- input: du lieu
+- output: nhan
+
+- ex 1:
+    - input: image
+    - ouput: name of student
+    
+    - problem:
+        - the man in image is student of the class or not ?
+            - negative sample (du lieu khong co)
+                - how to detect a person not belong to the class
+                - create negative sample
+        - what his name ?
+            - positive sample (du lieu co)
+        
+----- clustering
+- co bao nhiem nhom con
+- moi phan tu thuoc nhom con nao
+
+phan nhom theo:
+    - do tuong tu
+    - ham do do tuong tu
+    - nguong duoc xem la tuong tu
+    
+phan cum --> he luat
+- he luat la
+    - dac trung cua nhom con
+    - dac trung khac nhau giua cac nhom con
+
+rut gon so chieu
+    - truc quan hoa du lieu (2d/3d)
+    - giam do phuc tap
+
+----- mo hinh cay quyet dinh
+thuoc tinh goc
+
+
+----- mo hinh mang neural
+- moi nut la mot phan lop nhi phan
+- phan lop: chia du lieu (phan hoach du lieu)
+
+
+----- mo hinh hoc theo nhom ket hop
+- ket hop nhieu bo phan lop yeu -> bo phan lop manh
+
+----- thuat giai di truyen
+- lai, ghep, sinh ra diem moi
+- cho den gap dich
+
+----- hoc tang cuong
+ban co, chieu tuong, diem thuong
+cap nhap diem thuong cho trang thai ban co
+cap nhap diem thuong
+
+
+----- mo hinh markov, markov an
+xuat suat nang, mua qua khu
+du doan xac suat nang mua tuong lai
+
+----- practice
+python
+scikit learn
+
+
+
+
+
+
