@@ -1,0 +1,365 @@
+# dsconf localhost config get
+
+dsconf localhost config get
+dn: cn=config
+cn: config
+nsslapd-SSLclientAuth: allowed
+nsslapd-accesscontrol: on
+nsslapd-accesslog: /var/log/dirsrv/slapd-localhost/access
+nsslapd-accesslog-compress: off
+nsslapd-accesslog-level: 516
+nsslapd-accesslog-list:
+nsslapd-accesslog-logbuffering: on
+nsslapd-accesslog-logexpirationtime: 1
+nsslapd-accesslog-logexpirationtimeunit: month
+nsslapd-accesslog-logging-enabled: on
+nsslapd-accesslog-logmaxdiskspace: 500
+nsslapd-accesslog-logminfreediskspace: 5
+nsslapd-accesslog-logrotationsync-enabled: off
+nsslapd-accesslog-logrotationsynchour: 0
+nsslapd-accesslog-logrotationsyncmin: 0
+nsslapd-accesslog-logrotationtime: 1
+nsslapd-accesslog-logrotationtimeunit: day
+nsslapd-accesslog-maxlogsize: 100
+nsslapd-accesslog-maxlogsperdir: 10
+nsslapd-accesslog-mode: 600
+nsslapd-allow-anonymous-access: on
+nsslapd-allow-hashed-passwords: off
+nsslapd-allow-unauthenticated-binds: off
+nsslapd-allowed-sasl-mechanisms:
+nsslapd-anonlimitsdn:
+nsslapd-attribute-name-exceptions: off
+nsslapd-auditfaillog: /var/log/dirsrv/slapd-localhost/audit
+nsslapd-auditfaillog-compress: off
+nsslapd-auditfaillog-list:
+nsslapd-auditfaillog-logexpirationtime: 1
+nsslapd-auditfaillog-logexpirationtimeunit: month
+nsslapd-auditfaillog-logging-enabled: off
+nsslapd-auditfaillog-logging-hide-unhashed-pw: on
+nsslapd-auditfaillog-logmaxdiskspace: 100
+nsslapd-auditfaillog-logminfreediskspace: 5
+nsslapd-auditfaillog-logrotationsync-enabled: off
+nsslapd-auditfaillog-logrotationsynchour: 0
+nsslapd-auditfaillog-logrotationsyncmin: 0
+nsslapd-auditfaillog-logrotationtime: 1
+nsslapd-auditfaillog-logrotationtimeunit: week
+nsslapd-auditfaillog-maxlogsize: 100
+nsslapd-auditfaillog-maxlogsperdir: 2
+nsslapd-auditfaillog-mode: 600
+nsslapd-auditlog: /var/log/dirsrv/slapd-localhost/audit
+nsslapd-auditlog-compress: off
+nsslapd-auditlog-display-attrs:
+nsslapd-auditlog-list:
+nsslapd-auditlog-logexpirationtime: 1
+nsslapd-auditlog-logexpirationtimeunit: month
+nsslapd-auditlog-logging-enabled: off
+nsslapd-auditlog-logging-hide-unhashed-pw: on
+nsslapd-auditlog-logmaxdiskspace: 100
+nsslapd-auditlog-logminfreediskspace: 5
+nsslapd-auditlog-logrotationsync-enabled: off
+nsslapd-auditlog-logrotationsynchour: 0
+nsslapd-auditlog-logrotationsyncmin: 0
+nsslapd-auditlog-logrotationtime: 1
+nsslapd-auditlog-logrotationtimeunit: week
+nsslapd-auditlog-maxlogsize: 100
+nsslapd-auditlog-maxlogsperdir: 2
+nsslapd-auditlog-mode: 600
+nsslapd-backendconfig: cn=config,cn=userroot,cn=ldbm database,cn=plugins,cn=config
+nsslapd-bakdir: /var/lib/dirsrv/slapd-localhost/bak
+nsslapd-betype: ldbm database
+nsslapd-certdir: /etc/dirsrv/slapd-localhost
+nsslapd-certmap-basedn:
+nsslapd-close-on-failed-bind: off
+nsslapd-cn-uses-dn-syntax-in-dns: off
+nsslapd-config: cn=config
+nsslapd-connection-buffer: 1
+nsslapd-connection-nocanon: on
+nsslapd-counters: on
+nsslapd-csnlogging: on
+nsslapd-defaultnamingcontext: dc=sc-1
+nsslapd-disk-monitoring: off
+nsslapd-disk-monitoring-grace-period: 60
+nsslapd-disk-monitoring-logging-critical: off
+nsslapd-disk-monitoring-readonly-on-threshold: off
+nsslapd-disk-monitoring-threshold: 2097152
+nsslapd-dn-validate-strict: off
+nsslapd-ds4-compatible-schema: off
+nsslapd-dynamic-plugins: off
+nsslapd-enable-ldapssotoken: on
+nsslapd-enable-nunc-stans: off
+nsslapd-enable-turbo-mode: on
+nsslapd-enable-upgrade-hash: on
+nsslapd-enquote-sup-oc: off
+nsslapd-entryusn-global: off
+nsslapd-entryusn-import-initval: 0
+nsslapd-errorlog: /var/log/dirsrv/slapd-localhost/errors
+nsslapd-errorlog-compress: off
+nsslapd-errorlog-level: 16384
+nsslapd-errorlog-list:
+nsslapd-errorlog-logexpirationtime: 1
+nsslapd-errorlog-logexpirationtimeunit: month
+nsslapd-errorlog-logging-enabled: on
+nsslapd-errorlog-logmaxdiskspace: 100
+nsslapd-errorlog-logminfreediskspace: 5
+nsslapd-errorlog-logrotationsync-enabled: off
+nsslapd-errorlog-logrotationsynchour: 0
+nsslapd-errorlog-logrotationsyncmin: 0
+nsslapd-errorlog-logrotationtime: 1
+nsslapd-errorlog-logrotationtimeunit: week
+nsslapd-errorlog-maxlogsize: 100
+nsslapd-errorlog-maxlogsperdir: 2
+nsslapd-errorlog-mode: 600
+nsslapd-external-libs-debug-enabled: off
+nsslapd-extract-pemfiles: on
+nsslapd-force-sasl-external: off
+nsslapd-global-backend-lock: off
+nsslapd-groupevalnestlevel: 0
+nsslapd-hash-filters: off
+nsslapd-idletimeout: 3600
+nsslapd-ignore-time-skew: off
+nsslapd-ignore-virtual-attrs: on
+nsslapd-instancedir: /usr/lib64/dirsrv/slapd-localhost
+nsslapd-ioblocktimeout: 10000
+nsslapd-lastmod: on
+nsslapd-ldapiautobind: on
+nsslapd-ldapidnmappingbase: cn=auto_bind,cn=config
+nsslapd-ldapientrysearchbase: dc=example,dc=com
+nsslapd-ldapifilepath: /run/slapd-localhost.socket
+nsslapd-ldapigidnumbertype: gidNumber
+nsslapd-ldapilisten: on
+nsslapd-ldapimaprootdn: cn=Directory Manager
+nsslapd-ldapimaptoentries: off
+nsslapd-ldapiuidnumbertype: uidNumber
+nsslapd-ldapssotoken-secret: pJCgq4XydX2wC0HA6__eXgjifJ2OpSnFHZgDfZMJPUQ=
+nsslapd-ldapssotoken-ttl-secs: 3600
+nsslapd-ldifdir: /var/lib/dirsrv/slapd-localhost/ldif
+nsslapd-listen-backlog-size: 128
+nsslapd-listenhost:
+nsslapd-localhost: SC-1
+nsslapd-localssf: 71
+nsslapd-localuser: dirsrv
+nsslapd-lockdir: /run/lock/dirsrv/slapd-localhost
+nsslapd-logging-backend: dirsrv-log
+nsslapd-logging-hr-timestamps-enabled: on
+nsslapd-malloc-mmap-threshold: -10
+nsslapd-malloc-mxfast: -10
+nsslapd-malloc-trim-threshold: -10
+nsslapd-max-filter-nest-level: 40
+nsslapd-maxbersize: 2097152
+nsslapd-maxdescriptors: 524288
+nsslapd-maxsasliosize: 2097152
+nsslapd-maxsimplepaged-per-conn: -1
+nsslapd-maxthreadsperconn: 5
+nsslapd-minssf: 0
+nsslapd-minssf-exclude-rootdse: off
+nsslapd-moddn-aci: on
+nsslapd-nagle: off
+nsslapd-ndn-cache-enabled: on
+nsslapd-ndn-cache-max-size: 20971520
+nsslapd-numlisteners: 1
+nsslapd-outbound-ldap-io-timeout: 300000
+nsslapd-pagedsizelimit: 0
+nsslapd-plugin: cn=binary syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=bit string syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=boolean syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=case exact string syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=case ignore string syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=country string syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=delivery method syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=distinguished name syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=enhanced guide syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=entryuuid_syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=facsimile telephone number syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=fax syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=generalized time syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=guide syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=in chain,cn=plugins,cn=config
+nsslapd-plugin: cn=integer syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=jpeg syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=name and optional uid syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=numeric string syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=octet string syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=oid syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=postal address syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=printable string syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=space insensitive string syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=telephone syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=teletex terminal identifier syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=telex number syntax,cn=plugins,cn=config
+nsslapd-plugin: cn=octetstringmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=octetstringorderingmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=bitstringmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=bitwise plugin,cn=plugins,cn=config
+nsslapd-plugin: cn=caseexactia5match,cn=plugins,cn=config
+nsslapd-plugin: cn=caseexactmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=caseexactorderingmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=caseexactsubstringsmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=caseexactia5substringsmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=generalizedtimematch,cn=plugins,cn=config
+nsslapd-plugin: cn=generalizedtimeorderingmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=booleanmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=caseignoreia5match,cn=plugins,cn=config
+nsslapd-plugin: cn=caseignoreia5substringsmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=caseignorematch,cn=plugins,cn=config
+nsslapd-plugin: cn=caseignoreorderingmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=caseignoresubstringsmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=caseignorelistmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=caseignorelistsubstringsmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=objectidentifiermatch,cn=plugins,cn=config
+nsslapd-plugin: cn=directorystringfirstcomponentmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=objectidentifierfirstcomponentmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=distinguishednamematch,cn=plugins,cn=config
+nsslapd-plugin: cn=uuidmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=uuidorderingmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=inchainmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=integermatch,cn=plugins,cn=config
+nsslapd-plugin: cn=integerorderingmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=integerfirstcomponentmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=internationalization plugin,cn=plugins,cn=config
+nsslapd-plugin: cn=uniquemembermatch,cn=plugins,cn=config
+nsslapd-plugin: cn=numericstringmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=numericstringorderingmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=numericstringsubstringsmatch,cn=plugins,cn=config
+nsslapd-plugin: cn=telephonenumbermatch,cn=plugins,cn=config
+nsslapd-plugin: cn=telephonenumbersubstringsmatch,cn=plugins,cn=config
+nsslapd-plugin-binddn-tracking: off
+nsslapd-plugin-logging: on
+nsslapd-port: 389
+nsslapd-privatenamespaces: cn=schema
+nsslapd-privatenamespaces: cn=config
+nsslapd-pwpolicy-inherit-global: off
+nsslapd-pwpolicy-local: off
+nsslapd-readonly: off
+nsslapd-referral-check-period: 300
+nsslapd-referralmode:
+nsslapd-require-secure-binds: off
+nsslapd-requiresrestart: cn=config:nsslapd-port
+nsslapd-requiresrestart: cn=config:nsslapd-secureport
+nsslapd-requiresrestart: cn=config:nsslapd-ldapifilepath
+nsslapd-requiresrestart: cn=config:nsslapd-ldapilisten
+nsslapd-requiresrestart: cn=config:nsslapd-workingdir
+nsslapd-requiresrestart: cn=config:nsslapd-plugin
+nsslapd-requiresrestart: cn=config:nsslapd-sslclientauth
+nsslapd-requiresrestart: cn=config:nsslapd-changelogdir
+nsslapd-requiresrestart: cn=config:nsslapd-changelogsuffix
+nsslapd-requiresrestart: cn=config:nsslapd-changelogmaxentries
+nsslapd-requiresrestart: cn=config:nsslapd-changelogmaxage
+nsslapd-requiresrestart: cn=config:nsslapd-db-locks
+nsslapd-requiresrestart: cn=config:nsslapd-maxdescriptors
+nsslapd-requiresrestart: cn=config:nsslapd-numlisteners
+nsslapd-requiresrestart: cn=config:nsslapd-return-exact-case
+nsslapd-requiresrestart: cn=config:nsslapd-schema-ignore-trailing-spaces
+nsslapd-requiresrestart: cn=config,cn=ldbm:nsslapd-idlistscanlimit
+nsslapd-requiresrestart: cn=config,cn=ldbm:nsslapd-parentcheck
+nsslapd-requiresrestart: cn=config,cn=ldbm:nsslapd-dbcachesize
+nsslapd-requiresrestart: cn=config,cn=ldbm:nsslapd-dbncache
+nsslapd-requiresrestart: cn=config,cn=ldbm:nsslapd-cachesize
+nsslapd-requiresrestart: cn=config,cn=ldbm:nsslapd-plugin
+nsslapd-requiresrestart: cn=config,cn=ldbm:nsslapd-backend-implement
+nsslapd-requiresrestart: cn=encryption,cn=config:nssslsessiontimeout
+nsslapd-requiresrestart: cn=encryption,cn=config:nssslclientauth
+nsslapd-requiresrestart: cn=encryption,cn=config:nsssl2
+nsslapd-requiresrestart: cn=encryption,cn=config:nsssl3
+nsslapd-reservedescriptors: 64
+nsslapd-result-tweak: off
+nsslapd-return-exact-case: on
+nsslapd-return-original-entrydn: on
+nsslapd-rewrite-rfc1274: off
+nsslapd-rootdn: cn=Directory Manager
+nsslapd-rootpw: {PBKDF2-SHA512}10000$l4HiqCUvlv0pLA6d5dQrY4jkofuAR6GD$1tBr0vMedXzfHIub476JfnHKtiLS0ZoxybkywOLneUdnf2mnmxd61x+yWLnJuAkswGVnOompAsRRz/ebSPqLhw==
+nsslapd-rootpwstoragescheme: PBKDF2-SHA512
+nsslapd-rundir: /run/dirsrv
+nsslapd-sasl-mapping-fallback: off
+nsslapd-sasl-max-buffer-size: 2097152
+nsslapd-saslpath:
+nsslapd-schema-ignore-trailing-spaces: off
+nsslapd-schemacheck: on
+nsslapd-schemadir: /etc/dirsrv/slapd-localhost/schema
+nsslapd-schemamod: on
+nsslapd-schemareplace: replication-only
+nsslapd-search-return-original-type-switch: off
+nsslapd-securePort: 636
+nsslapd-securelistenhost:
+nsslapd-security: on
+nsslapd-securitylog: /var/log/dirsrv/slapd-localhost/security
+nsslapd-securitylog-compress: on
+nsslapd-securitylog-level: 256
+nsslapd-securitylog-list:
+nsslapd-securitylog-logbuffering: on
+nsslapd-securitylog-logexpirationtime: 1
+nsslapd-securitylog-logexpirationtimeunit: month
+nsslapd-securitylog-logging-enabled: on
+nsslapd-securitylog-logmaxdiskspace: 500
+nsslapd-securitylog-logminfreediskspace: 5
+nsslapd-securitylog-logrotationsync-enabled: off
+nsslapd-securitylog-logrotationsynchour: 0
+nsslapd-securitylog-logrotationsyncmin: 0
+nsslapd-securitylog-logrotationtime: 1
+nsslapd-securitylog-logrotationtimeunit: week
+nsslapd-securitylog-maxlogsize: 100
+nsslapd-securitylog-maxlogsperdir: 10
+nsslapd-securitylog-mode: 600
+nsslapd-sizelimit: 2000
+nsslapd-snmp-index: 0
+nsslapd-ssl-check-hostname: on
+nsslapd-statlog-level: 0
+nsslapd-svrtab:
+nsslapd-syntaxcheck: on
+nsslapd-syntaxlogging: off
+nsslapd-targetfilter-cache: on
+nsslapd-tcp-fin-timeout: 30
+nsslapd-tcp-keepalive-time: 300
+nsslapd-threadnumber: 16
+nsslapd-timelimit: 3600
+nsslapd-tls-check-crl: none
+nsslapd-tmpdir: /tmp
+nsslapd-unhashed-pw-switch: off
+nsslapd-validate-cert: warn
+nsslapd-verify-filter-schema: process-safe
+nsslapd-versionstring: 389-Directory/2.4.5
+nsslapd-workingdir: /var/log/dirsrv/slapd-localhost
+objectClass: top
+objectClass: extensibleObject
+objectClass: nsslapdConfig
+passwordAdminDN:
+passwordAdminSkipInfoUpdate: off
+passwordBadWords:
+passwordChange: on
+passwordCheckSyntax: off
+passwordDictCheck: off
+passwordDictPath:
+passwordExp: off
+passwordGraceLimit: 0
+passwordInHistory: 6
+passwordIsGlobalPolicy: off
+passwordLegacyPolicy: on
+passwordLockout: off
+passwordLockoutDuration: 3600
+passwordMaxAge: 8640000
+passwordMaxClassChars: 0
+passwordMaxFailure: 3
+passwordMaxRepeats: 0
+passwordMaxSeqSets: 0
+passwordMaxSequence: 0
+passwordMin8bit: 0
+passwordMinAge: 0
+passwordMinAlphas: 0
+passwordMinCategories: 3
+passwordMinDigits: 0
+passwordMinLength: 8
+passwordMinLowers: 0
+passwordMinSpecials: 0
+passwordMinTokenLength: 3
+passwordMinUppers: 0
+passwordMustChange: off
+passwordPalindrome: off
+passwordResetFailureCount: 600
+passwordSendExpiringTime: off
+passwordStorageScheme: PBKDF2-SHA512
+passwordTPRDelayExpireAt: -1
+passwordTPRDelayValidFrom: -1
+passwordTPRMaxUse: -1
+passwordTrackUpdateTime: off
+passwordUnlock: on
+passwordUserAttributes:
+passwordWarning: 86400

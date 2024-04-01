@@ -1,0 +1,3130 @@
+{
+    "type": "list",
+    "items": [
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "7-bit check"
+            ],
+            "nsslapd-pluginPath": [
+                "libattr-unique-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "NS7bitAttr_Init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpreoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginarg0": [
+                "uid"
+            ],
+            "nsslapd-pluginarg1": [
+                "mail"
+            ],
+            "nsslapd-pluginarg2": [
+                ","
+            ],
+            "nsslapd-pluginarg3": [
+                "dc=sc-1"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "NS7bitAttr"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Enforce  7-bit clean attribute values"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Account Policy Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libacctpolicy-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "acct_policy_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginarg0": [
+                "cn=config,cn=Account Policy Plugin,cn=plugins,cn=config"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ],
+            "numSubordinates": [
+                "1"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Account Usability Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libacctusability-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "auc_init"
+            ],
+            "nsslapd-pluginType": [
+                "preoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "Account Usability Control"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Account Usability Control plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "ACL Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libacl-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "acl_init"
+            ],
+            "nsslapd-pluginType": [
+                "accesscontrol"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "acl"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "acl access check plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "ACL preoperation"
+            ],
+            "nsslapd-pluginPath": [
+                "libacl-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "acl_preopInit"
+            ],
+            "nsslapd-pluginType": [
+                "preoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "acl"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "acl access check plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Alias Entries"
+            ],
+            "nsslapd-pluginPath": [
+                "libalias-entries-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "alias_entry_init"
+            ],
+            "nsslapd-pluginType": [
+                "preoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "attribute uniqueness"
+            ],
+            "nsslapd-pluginPath": [
+                "libattr-unique-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "NSUniqueAttr_Init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpreoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "uniqueness-attribute-name": [
+                "uid"
+            ],
+            "uniqueness-subtrees": [
+                "dc=sc-1"
+            ],
+            "uniqueness-across-all-subtrees": [
+                "off"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Auto Membership Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libautomember-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "automember_init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpreoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "automemberprocessmodifyops": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "Auto Membership"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Auto Membership plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Binary Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "bin_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "bin-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "binary attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Bit String"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "bitstring_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "bitstring-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Bit String attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Bitwise Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libbitwise-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "bitwise_init"
+            ],
+            "nsslapd-pluginType": [
+                "matchingRule"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "bitwise"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "bitwise match plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Boolean Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "boolean_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "boolean-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Boolean attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Case Exact String Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "ces_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "ces-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "caseExactString attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Case Ignore String Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "cis_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "directorystring-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "DirectoryString attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "chaining database"
+            ],
+            "nsslapd-pluginPath": [
+                "libchainingdb-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "chaining_back_init"
+            ],
+            "nsslapd-pluginType": [
+                "database"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "chaining database"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "LDAP chaining backend database plugin"
+            ],
+            "numSubordinates": [
+                "2"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Class of Service"
+            ],
+            "nsslapd-pluginPath": [
+                "libcos-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "cos_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-plugin-depends-on-named": [
+                "State Change Plugin",
+                "Views"
+            ],
+            "nsslapd-pluginId": [
+                "cos"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "class of service plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Content Synchronization"
+            ],
+            "nsslapd-pluginPath": [
+                "libcontentsync-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "sync_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-pluginbetxn": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-plugin-depends-on-named": [
+                "Retro Changelog Plugin"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Country String Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "country_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "countrystring-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Country String attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Delivery Method Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "delivery_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "delivery-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Delivery Method attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject",
+                "nsContainer"
+            ],
+            "cn": [
+                "deref"
+            ],
+            "nsslapd-pluginPath": [
+                "libderef-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "deref_init"
+            ],
+            "nsslapd-pluginType": [
+                "preoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "Dereference"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Dereference plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Distinguished Name Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "dn_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "dn-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "distinguished name attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject",
+                "nsContainer"
+            ],
+            "cn": [
+                "Distributed Numeric Assignment Plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "dna_init"
+            ],
+            "nsslapd-pluginType": [
+                "bepreoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-pluginPath": [
+                "libdna-plugin"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Enhanced Guide Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "enhancedguide_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "enhancedguide-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Enhanced Guide attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "entryuuid"
+            ],
+            "nsslapd-pluginPath": [
+                "libentryuuid-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "entryuuid_plugin_init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpreoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ],
+            "creatorsName": [
+                "cn=server,cn=plugins,cn=config"
+            ],
+            "modifiersName": [
+                "cn=server,cn=plugins,cn=config"
+            ],
+            "createTimestamp": [
+                "20240401042706Z"
+            ],
+            "modifyTimestamp": [
+                "20240401042706Z"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "entryuuid_syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libentryuuid-syntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "entryuuid_syntax_plugin_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ],
+            "creatorsName": [
+                "cn=server,cn=plugins,cn=config"
+            ],
+            "modifiersName": [
+                "cn=server,cn=plugins,cn=config"
+            ],
+            "createTimestamp": [
+                "20240401042706Z"
+            ],
+            "modifyTimestamp": [
+                "20240401042706Z"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Facsimile Telephone Number Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "facsimile_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "facsimile-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Facsimile Telephone Number attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Fax Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "fax_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "fax-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Fax attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Generalized Time Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "time_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "time-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "GeneralizedTime attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Guide Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "guide_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "guide-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Guide attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "In Chain"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "inchain_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "inchain-matching-rule"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "inchain matching rule plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Integer Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "int_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "int-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "integer attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Internationalization Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libcollation-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "orderingRule_init"
+            ],
+            "nsslapd-pluginType": [
+                "matchingRule"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginarg0": [
+                "/etc/dirsrv/slapd-localhost/slapd-collations.conf"
+            ],
+            "nsslapd-pluginId": [
+                "orderingrule"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "internationalized ordering rule plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "JPEG Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "jpeg_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "jpeg-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "JPEG attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "ldbm database"
+            ],
+            "nsslapd-pluginPath": [
+                "libback-ldbm"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "ldbm_back_init"
+            ],
+            "nsslapd-pluginType": [
+                "database"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "Syntax",
+                "matchingRule"
+            ],
+            "nsslapd-pluginId": [
+                "ldbm-backend"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "high-performance LDAP backend database plugin"
+            ],
+            "numSubordinates": [
+                "3"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject",
+                "nsContainer"
+            ],
+            "cn": [
+                "Linked Attributes"
+            ],
+            "nsslapd-pluginPath": [
+                "liblinkedattrs-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "linked_attrs_init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpreoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "Linked Attributes"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Linked Attributes plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject",
+                "nsContainer"
+            ],
+            "cn": [
+                "Managed Entries"
+            ],
+            "nsslapd-pluginPath": [
+                "libmanagedentries-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "mep_init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpreoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "Managed Entries"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Managed Entries plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "MemberOf Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libmemberof-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "memberof_postop_init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpostoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "memberofgroupattr": [
+                "member"
+            ],
+            "memberofattr": [
+                "memberOf"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Multisupplier Replication Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libreplication-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "replication_multisupplier_plugin_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginbetxn": [
+                "on"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-named": [
+                "ldbm database",
+                "AES",
+                "Class of Service"
+            ],
+            "nsslapd-pluginId": [
+                "replication-multisupplier"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Multi-supplier Replication Plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Name And Optional UID Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "nameoptuid_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "nameoptuid-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Name And Optional UID attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Numeric String Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "numstr_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "numstr-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "numeric string attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Octet String Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "octetstring_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "octetstring-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "octet string attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "OID Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "oid_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "oid-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "OID attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject",
+                "pamConfig"
+            ],
+            "cn": [
+                "PAM Pass Through Auth"
+            ],
+            "nsslapd-pluginPath": [
+                "libpam-passthru-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "pam_passthruauth_init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpreoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-pluginloadglobal": [
+                "true"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "pamMissingSuffix": [
+                "ALLOW"
+            ],
+            "pamExcludeSuffix": [
+                "cn=config"
+            ],
+            "pamIDMapMethod": [
+                "RDN"
+            ],
+            "pamIDAttr": [
+                "notUsedWithRDNMethod"
+            ],
+            "pamFallback": [
+                "FALSE"
+            ],
+            "pamSecure": [
+                "TRUE"
+            ],
+            "pamService": [
+                "ldapserver"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Pass Through Authentication"
+            ],
+            "nsslapd-pluginPath": [
+                "libpassthru-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "passthruauth_init"
+            ],
+            "nsslapd-pluginType": [
+                "preoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Posix Winsync API"
+            ],
+            "nsslapd-pluginPath": [
+                "libposix-winsync-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "posix_winsync_plugin_init"
+            ],
+            "nsslapd-pluginType": [
+                "preoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "posixwinsyncmssfuschema": [
+                "false"
+            ],
+            "posixwinsyncmapmemberuid": [
+                "true"
+            ],
+            "posixwinsyncmapnestedgrouping": [
+                "false"
+            ],
+            "posixwinsynccreatememberoftask": [
+                "false"
+            ],
+            "posixwinsynclowercaseuid": [
+                "false"
+            ],
+            "nsslapd-pluginprecedence": [
+                "25"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Postal Address Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "postal_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "postaladdress-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Postal Address attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Printable String Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "printable_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "printablestring-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Printable String attribtue syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "referential integrity postoperation"
+            ],
+            "nsslapd-pluginPath": [
+                "libreferint-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "referint_postop_init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpostoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-pluginprecedence": [
+                "40"
+            ],
+            "referint-update-delay": [
+                "0"
+            ],
+            "referint-logfile": [
+                "/var/log/dirsrv/slapd-localhost/referint"
+            ],
+            "referint-membership-attr": [
+                "member",
+                "uniquemember",
+                "owner",
+                "seeAlso"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Retro Changelog Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libretrocl-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "retrocl_plugin_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginbetxn": [
+                "on"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-pluginprecedence": [
+                "25"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-plugin-depends-on-named": [
+                "Class of Service"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Roles Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libroles-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "roles_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginbetxn": [
+                "on"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-plugin-depends-on-named": [
+                "State Change Plugin",
+                "Views"
+            ],
+            "nsslapd-pluginId": [
+                "roles"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "roles plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "rootDNPluginConfig"
+            ],
+            "cn": [
+                "RootDN Access Control"
+            ],
+            "nsslapd-pluginPath": [
+                "librootdn-access-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "rootdn_init"
+            ],
+            "nsslapd-pluginType": [
+                "internalpreoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Schema Reload"
+            ],
+            "nsslapd-pluginPath": [
+                "libschemareload-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "schemareload_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "schemareload"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "task plugin to reload schema files"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Space Insensitive String Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "sicis_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                ""
+            ],
+            "nsslapd-pluginId": [
+                "spaceinsensitivestring-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "space insensitive string attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "State Change Plugin"
+            ],
+            "nsslapd-pluginPath": [
+                "libstatechange-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "statechange_init"
+            ],
+            "nsslapd-pluginType": [
+                "betxnpostoperation"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "statechange"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "state change notification service plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Syntax Validation Task"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "syntax_validate_task_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Telephone Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "tel_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "tele-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "telephoneNumber attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Teletex Terminal Identifier Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "teletex_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "teletextermid-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Teletex Terminal Identifier attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Telex Number Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "telex_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "telex-syntax"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Telex Number attribute syntax plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "URI Syntax"
+            ],
+            "nsslapd-pluginPath": [
+                "libsyntax-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "uri_init"
+            ],
+            "nsslapd-pluginType": [
+                "syntax"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "USN"
+            ],
+            "nsslapd-pluginPath": [
+                "libusn-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "usn_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginEnabled": [
+                "off"
+            ],
+            "nsslapd-pluginbetxn": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "Views"
+            ],
+            "nsslapd-pluginPath": [
+                "libviews-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "views_init"
+            ],
+            "nsslapd-pluginType": [
+                "object"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-plugin-depends-on-named": [
+                "State Change Plugin"
+            ],
+            "nsslapd-pluginId": [
+                "views"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "virtual directory information tree views plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "whoami"
+            ],
+            "nsslapd-pluginPath": [
+                "libwhoami-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "whoami_init"
+            ],
+            "nsslapd-pluginType": [
+                "extendedop"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-plugin-depends-on-type": [
+                "database"
+            ],
+            "nsslapd-pluginId": [
+                "whoami-plugin"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "whoami extended operation plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin",
+                "extensibleObject"
+            ],
+            "cn": [
+                "AES"
+            ],
+            "nsslapd-pluginPath": [
+                "libpbe-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "aes_init"
+            ],
+            "nsslapd-pluginType": [
+                "reverpwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginarg0": [
+                "nsmultiplexorcredentials"
+            ],
+            "nsslapd-pluginarg1": [
+                "nsds5ReplicaCredentials"
+            ],
+            "nsslapd-pluginarg2": [
+                "nsds5ReplicaBootstrapCredentials"
+            ],
+            "nsslapd-pluginId": [
+                "aes-storage-scheme"
+            ],
+            "nsslapd-pluginprecedence": [
+                "1"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "AES storage scheme plugin"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "CLEAR"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "clear_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "clear-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "No encryption (CLEAR)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "CRYPT"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "crypt_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "crypt-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Unix crypt algorithm (CRYPT)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "CRYPT-MD5"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "crypt_md5_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "crypt-md5-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Unix crypt algorithm (CRYPT-MD5)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "CRYPT-SHA256"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "crypt_sha256_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "crypt-sha256-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Unix crypt algorithm (CRYPT-SHA256)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "CRYPT-SHA512"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "crypt_sha512_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "crypt-sha512-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Unix crypt algorithm (CRYPT-SHA512)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "GOST_YESCRYPT"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "gost_yescrypt_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "gost-yescrypt-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Yescrypt KDF algorithm (Streebog256)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "MD5"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "md5_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "md5-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "MD5 hash algorithm (MD5)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "NS-MTA-MD5"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "ns_mta_md5_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "NS-MTA-MD5-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Netscape MD5 (NS-MTA-MD5)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "PBKDF2"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdchan-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "pwdchan_pbkdf2_plugin_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "PBKDF2-SHA1"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdchan-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "pwdchan_pbkdf2_sha1_plugin_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "PBKDF2-SHA256"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdchan-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "pwdchan_pbkdf2_sha256_plugin_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "PBKDF2-SHA512"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdchan-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "pwdchan_pbkdf2_sha512_plugin_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "none"
+            ],
+            "nsslapd-pluginVersion": [
+                "none"
+            ],
+            "nsslapd-pluginVendor": [
+                "none"
+            ],
+            "nsslapd-pluginDescription": [
+                "none"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "PBKDF2_SHA256"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "pbkdf2_sha256_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "pbkdf2-sha256-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Salted PBKDF2 SHA256 hash algorithm (PBKDF2_SHA256)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "SHA"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "sha_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "sha-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Secure Hashing Algorithm (SHA)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "SHA256"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "sha256_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "sha256-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Secure Hashing Algorithm (SHA256)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "SHA384"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "sha384_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "sha384-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Secure Hashing Algorithm (SHA384)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "SHA512"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "sha512_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "sha512-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Secure Hashing Algorithm (SHA512)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "SMD5"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "smd5_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "smd5-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Salted MD5 hash algorithm (SMD5)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "SSHA"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "ssha_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "ssha-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Salted Secure Hashing Algorithm (SSHA)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "SSHA256"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "ssha256_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "ssha256-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Salted Secure Hashing Algorithm (SSHA256)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "SSHA384"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "ssha384_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "ssha384-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Salted Secure Hashing Algorithm (SSHA384)"
+            ]
+        },
+        {
+            "objectClass": [
+                "top",
+                "nsSlapdPlugin"
+            ],
+            "cn": [
+                "SSHA512"
+            ],
+            "nsslapd-pluginPath": [
+                "libpwdstorage-plugin"
+            ],
+            "nsslapd-pluginInitfunc": [
+                "ssha512_pwd_storage_scheme_init"
+            ],
+            "nsslapd-pluginType": [
+                "pwdstoragescheme"
+            ],
+            "nsslapd-pluginEnabled": [
+                "on"
+            ],
+            "nsslapd-pluginId": [
+                "ssha512-password-storage-scheme"
+            ],
+            "nsslapd-pluginVersion": [
+                "2.4.5"
+            ],
+            "nsslapd-pluginVendor": [
+                "389 Project"
+            ],
+            "nsslapd-pluginDescription": [
+                "Salted Secure Hashing Algorithm (SSHA512)"
+            ]
+        }
+    ]
+}
