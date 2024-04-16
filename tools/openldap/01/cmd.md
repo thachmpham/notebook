@@ -1,0 +1,1 @@
+ldapsearch -P 3 -x -LLL -b '' -s base -H ldap://localhost:9011/ @extensibleObject
