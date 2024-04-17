@@ -1,0 +1,1 @@
+slapd -f slapd.conf -h ldap://localhost:9011/ 
