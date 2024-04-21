@@ -1,1 +1,5 @@
 .DS_Store
+
+openldap/*/db/*
+openldap/*/slapd.pid
+openldap/*/slapd.args
