@@ -1,0 +1,7 @@
+dn: dc=example,dc=com
+objectclass:    top
+objectclass:    organization
+objectclass:    dcobject
+o:  Example, Inc.
+description:    The Example, Inc. at Anytown.
+
