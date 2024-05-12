@@ -3,3 +3,5 @@
 openldap/*/db/*
 openldap/*/slapd.pid
 openldap/*/slapd.args
+
+*.mdb
