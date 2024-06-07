@@ -1,0 +1,14 @@
+dn: cn=testpreop,cn=plugins,cn=config
+cn: testpreop
+nsslapd-plugin-depends-on-type: database
+nsslapd-pluginDescription: sample pre-operation plugin
+nsslapd-pluginEnabled: on
+nsslapd-pluginId: test-preop
+nsslapd-pluginInitfunc: testpreop_init
+nsslapd-pluginPath: libtest-plugin
+nsslapd-pluginType: preoperation
+nsslapd-pluginVendor: VENDOR
+nsslapd-pluginVersion: DS_PACKAGE_VERSION
+objectClass: top
+objectClass: nsSlapdPlugin
+objectClass: extensibleObject

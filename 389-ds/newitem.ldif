@@ -1,0 +1,9 @@
+dn: ou=teams,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: teams
+
+dn: ou=rooms,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: rooms

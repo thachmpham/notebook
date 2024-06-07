@@ -1,0 +1,22 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "/root/389-ds-base/ldap/servers/slapd/test-plugins/build.sh",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "add",
+            "type": "shell",
+            "command": "ldapadd -x -H ldap://localhost:389 -D 'cn=Directory Manager' -w rootroot -f /root/newitem.ldif"
+        }
+    ]
+}
