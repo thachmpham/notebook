@@ -16,7 +16,7 @@
         {
             "label": "add",
             "type": "shell",
-            "command": "ldapadd -x -H ldap://localhost:389 -D 'cn=Directory Manager' -w rootroot -f /root/newitem.ldif"
+            "command": "ldapadd -x -H ldap://localhost:389 -D 'cn=Directory Manager' -w password -f /root/newitem.ldif"
         }
     ]
 }
